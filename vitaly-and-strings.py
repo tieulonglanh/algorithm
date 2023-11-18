@@ -22,10 +22,7 @@ def fib() :
             return 'No such string'
     else:
         if ord(s1[-1]) + 1 > 122:
-            tmp = ''
-            for i in range(length - 1 - pos):
-                tmp += 'a'
-            return s2[0:pos + 1] + tmp
+            return s2[0:len(s2) - 1] + 'a'
         
         return s1[0:length - 1] + chr(ord(s1[-1]) + 1)
         
